@@ -34,10 +34,19 @@
                 android:persistent="false" />
 
         <PreferenceScreen
+            android:key="offscreen_gestures"
+            android:title="@string/offscreen_gestures_title">
+            <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetClass="org.omnirom.device.DeviceSettings"
+                    android:targetPackage="org.omnirom.device" />
+        </PreferenceScreen>
+
+        <PreferenceScreen
                 android:key="wallpaper"
                 android:title="@string/wallpaper_settings_title"
                 settings:keywords="@string/keywords_display_wallpaper"
-                android:fragment="com.android.settings.WallpaperTypeSettings" />
+                android:fragment="com.android.settings.WallpaperTypeSettings" /> 
 
         <ListPreference
                 android:key="screen_timeout"
