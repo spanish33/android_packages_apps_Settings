@@ -102,4 +102,6 @@
     <!-- Accent color that matches the settings launcher icon -->
     <color name="icon_accent">#ffabffec</color>
 
+    <color name="external_tile_icon_tint_color">?android:attr/colorAccent</color>
+
 </resources>
